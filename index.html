@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+<link rel="icon" href="logo2.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        body{position: relative;
+            z-index: 1;
+            max-width: 100vw;
+            overflow-x: hidden;
+        }
+        #heroSectionContainer{
+            
+            
+           
+        }
+        
+        .nav1{
+            width: 100%;
+            background-color: #1EB3C1;
+            display: flex;
+            position: fixed;
+            font-size: 30px;
+        top:0;
+        left:0px;
+        margin: 0px;
+       z-index: 3;
+      
+        }
+  #nav2{
+     
+    z-index: 2;
+
+  }
+        #logo{
+          
+          
+          height: 5vh;
+         
+        
+           
+        }
+        a{
+            text-decoration: none;
+        }
+        #navUnorderList{
+display: flex;    
+justify-content: space-evenly;
+align-content: center;
+width: 90vw;
+margin-top: 20px;
+height: 40px;
+font-size: 20px;
+color: white;
+
+}
+ 
+#moveLogo{
+    border-radius: 50%;
+}
+#mainText{
+    top:150px;
+    position: relative;
+    text-align: center;
+    height: 50px;
+     
+     left:0vw;
+     z-index: 1;
+ 
+ 
+}
+#check1{
+  visibility: hidden;   
+
+}
+#navlbl{
+    
+    left: 80px;
+    position: relative;
+}
+.navElements{
+    position: fixed;
+    z-index: 5;
+    top:60px;
+    width: 80vw;
+    font-size: 40px;
+    background-color: #1EB3C1;
+   visibility: hidden;
+}
+ .priorityNav2Elem{
+   visibility: visible;
+ }
+ 
+
+@keyframes rotationCir{
+    0%{
+        top:300px;
+left:-20vw;
+    }
+   
+ 50%{
+     
+left:50vw;
+ } 
+ 
+    100%{
+left: 90vw;
+    }
+}
+ 
+#heroSection{
+    
+      
+    
+    width: 100vw;
+     
+
+}
+#heroSection img{
+width: 100vw;
+height: 90vh;
+}
+#heroSecPosHandler{
+    
+   
+  
+} 
+.ecotaterText{
+    top:300px;
+   color: #f6f8f3; 
+   font-size: 50px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   
+} 
+#mainiHeadingText{
+    font-size: 30px;
+    text-align: center;
+    width: 80vw;
+}
+.card{
+    width: 300px;
+  
+    background-color: #fafafa;
+     margin-bottom: 20px;
+}
+.missionAndVision{
+    text-align: center;
+    padding-top: 2%;
+    font-size: 20px;
+    top:110vh;
+    width: 100vw;
+     flex-wrap: wrap;
+    display: flex;
+ justify-content: space-evenly;
+  
+
+ 
+}
+
+#ourProduct{
+    font-size: 50px;
+    background-color: azure;
+}
+#ourProduct button{
+    background-color: #87CF35 ;
+    font-size: 20px;
+    padding: 1%;
+    border: 0px;
+    color: white;
+}
+
+#sec3{
+    text-align: center;
+}
+.footBox{
+   
+    
+
+    height: 120px;
+    width: 30vw;
+    
+}
+#footBoxContainer{
+    display: flex;
+    justify-content: center;
+align-content: center;
+}
+footer{
+    margin-top: 10px;
+} 
+
+ 
+#videoSec{
+    padding: 2%;
+}
+
+li{
+    list-style: none;
+}
+footer{
+    background-color: #1EB3C1;
+}
+@media (max-width:500px){
+   .nav1{
+    width: 99vw;
+   }
+   #nav1{
+    visibility: hidden;
+   }
+   .heroImages{
+    height: 40vh;   
+   }
+
+   iframe{
+    width: 80vw;
+    height: 40vh;
+}
+footer{
+    font-size: 9px;
+}
+ 
+}
+@media ((max-width:800px) and (min-width:551px)){
+   
+   .heroImages{
+    height: 70vh;   
+   }
+}
+    </style>
+</head>
+<body>
+  
+    <header>
+        <nav id="nav1" class="nav1">
+            <li class="navItems" id="logo"><img src="logo2.jpg" width="60px" alt=""></li>
+            <ul id="navUnorderList">
+                
+                <li class="navItems"><a href="">Home</a></li>
+                <li class="navItems"><a href="/about.html">About</a></li>
+                <li class="navItems"><a href="">Product</a></li>
+                <li class="navItems"><a href="">Blogs</a></li>
+                <li class="navItems"><a href="/team.html">Our Team</a></li>
+                <li class="navItems"><a href="">Contact Us</a></li>
+            </ul>
+        </nav>
+        <nav id="nav2" class="nav1">
+            <li class="navItems" id="logo"><img src="logo2.jpg" width="60px" alt=""></li>
+            <ul id="navUnorderList">
+                <li class="navItems" id="lblItem"> 
+                    <input class="checkBoxClass" type="checkbox" id="check1">
+                    
+                </li>
+                <li class="navItems"> 
+                <label for="check1" id="navlbl"><i class="fa-solid fa-bars"></i></label> 
+            </li> 
+            </ul>
+        </nav>
+        <div class="navElements " id="nav2Elem">
+            <ul  >
+                
+                <li class="navItems"><a href="">Home</a></li>
+                <li class="navItems"><a href="/about.html">About</a></li>
+                <li class="navItems"><a href="">Product</a></li>
+                <li class="navItems"><a href="">Blogs</a></li>
+                <li class="navItems"><a href="/team.html">Our Team</a></li>
+                <li class="navItems"><a href="">Contact Us</a></li>
+            </ul>
+        </div>
+    </header>
+     
+    <main>
+      <section> <div class="ecotaterText" id="mainText" >Welcome to <h1 class="ecotaterText">Ecotater Starch</h1>
+    <p id="mainiHeadingText">Transforming potato waste water into sustainable starch solutions." Join us on our eco-friendly journey to revolutionize the starch industry, one spud at a time.</p></div>
+        
+        </section> 
+        <div>
+     <section id="heroSectionConatiner">
+       <div id="heroSecPosHandler">
+        <div id="heroSection">
+         <img   class="heroImages" src="potato2.avif"   alt="">
+         
+        </div>
+    </div>
+     </section>  
+    </div>
+     <section >
+       <div><h1>Our Mission And Vision</h1></div>
+       <div class="missionAndVision">
+        <div id="mission" class="card">
+            <h1>Mission</h1>
+            <p>Our mission is to sustainably extract high-quality starch from potato processing wastewater, minimizing waste and reducing environmental impact. By providing a locally sourced alternative to imported starch, we aim to support local economies while promoting eco-friendly practices in the food industry. Through innovation, quality, and collaboration, we endeavor to create a model of sustainability that benefits both the environment and the economy, fostering a greener and more prosperous future for all.</p>
+        </div>
+        <div id="vision" class="card">
+            <h1>Vision</h1>
+            <p>We envision a future where the potato processing industry is transformed into a beacon of sustainability, where waste becomes a valuable resource. We strive to lead this transformation by revolutionizing starch extraction from potato processing wastewater, fostering sustainability, and driving economic growth through innovation and collaboration.</p>
+        </div>
+    </div>
+     </section>
+     <section id="videoSec">
+        <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/DnUX5o6ENNs?si=Wb3E5HhIdOJASgNW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+     </section>
+     <section id="ourProduct">
+        <p>Our Product</p>
+        <div>
+            <div>
+            <img src="product.jpg" width="200px" alt="">
+        </div>
+            <button>Learn More</button>
+        </div>
+     </section>
+    </main>
+    <footer >
+        <section id="footSec1">
+         <div id="footBoxContainer">
+ <div class="footBox">
+     <h4>Product</h4>
+     <hr>
+     <li>EcotaterStarch</li>
+ </div>
+ <div class="footBox">
+     <h4>Social Media</h4>
+     <hr>
+       <li><a href="https://www.instagram.com/ecotater_starch?igsh=MW8ybzM1YjRkNHc5MA=="><i class="fa-brands fa-square-instagram"></i>Instagram</a></li>
+     
+     <li><a href="https://youtube.com/@ecotater_starch?si=nZJvXfQG86EI_lIa"><i class="fa-brands fa-youtube"></i> Youtube</a></li>
+ </div>
+ <div class="footBox">
+     <h4>Contact</h4>
+     <hr>
+     <li> <i class="fa-solid fa-envelope"></i> ecotaterteam@gmail.com</li>
+     <li><i class="fa-solid fa-phone"></i>+92 305 7677900</li>
+     <li><i class="fa-solid fa-location-dot"></i> BIC university of Gujrat</li>
+ </div>
+ </div>
+        </section>
+        <section id="footSec2">
+         <div id="copR">
+        
+     </div>
+ </section>
+      </footer>
+      <script>
+        function toggleClass() {
+            var element = document.getElementById("nav2Elem");
+            element.classList.toggle("priorityNav2Elem");
+        }
+        document.getElementById("check1").addEventListener('change', function() {
+            toggleClass();
+        });
+    </script>
+</body>
+</html>
+ 
+ 
